@@ -37,12 +37,15 @@ from ConvertHexToRGB import hex_to_rgb
 #push_session in the current document
 main_session = push_session(curdoc())
 
-#Directory of the Collection
-coll_dir = "Collections/CollectionsJoao"
-#List Collections
-file = os.listdir(coll_dir)[60]
+# #Directory of the Collection
+# coll_dir = "Collections/CollectionsJoao"
+# #List Collections
+# file = os.listdir(coll_dir)[60]
+
+file = "collection_1487697405.pkl"
+
 #open data
-with open(coll_dir + "/" + file, 'rb') as handle:
+with open(file, 'rb') as handle:
 	collection = pickle.load(handle)
 
 #Variables
